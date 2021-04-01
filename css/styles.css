@@ -1,0 +1,133 @@
+/*
+  Name: Artem Zabarov
+  File: styles.css
+  Date: 3/31/2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #ccffcc;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav {
+  background-color: #ccffcc;
+}
+
+dl {
+  margin: 0;
+}
+
+dd {
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+dt {
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #000000;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+#contact {
+  margin-left: 20%;
+}
+
+#about {
+  margin-left: 20%;
+  }
+
+#post {
+  float: right;
+  margin-right: 10px;
+}
+
+#feed {
+  width: 65%;
+  padding-bottom: 400px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:;
+}
+#rcorners2 {
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 90%;
+  min-height: 150px;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 50px; 
+}
+
+#classes {
+  margin-left: 20%;
+}
+
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer {
+ position: fixed;
+ background-color: #66ff66;
+ bottom:0;
+ width: 100%;
+ text-align: center;
+ font-size: 1em;
+ padding-top: 0.5%;
+ padding-bottom: 0.5%;
+ height: 3.5%;
+}
