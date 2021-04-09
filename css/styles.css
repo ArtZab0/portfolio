@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,13 +21,37 @@ img {
   display: block;
 }
 
+#wrap img {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style rules for main content */
+
+/* Style rules for mobile viewport */
+
+.round {
+  border-radius: 6px;
+}
+
 header {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
+  font-family: 'DM Serif Display', serif;
 }
 
 nav {
-  background-color: #ccffcc;
+  background-color: #b3ffb3;
+}
+
+nav a:hover {
+  background-color: #a5de54;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000000;
 }
 
 dl {
@@ -36,26 +60,26 @@ dl {
 
 dd {
   font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
 }
 
 dt {
   font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   text-align: center;
 }
 
 nav li{
-  display: inline-block;
+  display: block;
+  border-top: 1px solid #fff;
   font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
@@ -67,34 +91,52 @@ nav li a {
   padding-left: 2em;
   padding-right: 2em;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-#contact {
-  margin-left: 20%;
+
+.tel-link {
+    background-color: #73AD21;
+    padding: 2%;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
 
-#about {
-  margin-left: 20%;
-  }
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
 
-#post {
+.map {
+  border: 5px solid #73AD21;
+  width: 95%;
+  height: 300px;
+  margin: 30px auto 100px auto;
+  display: block;
+}
+
+
+.post {
   float: right;
   margin-right: 10px;
 }
 
 #feed {
-  width: 65%;
+  width: 90%;
   padding-bottom: 400px;
   padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color:;
 }
 #rcorners2 {
   background-color: white;
   border-radius: 25px;
   border: 2px solid #73AD21;
-  padding: 20px; 
+  padding: 10px; 
   width: 90%;
   min-height: 150px;  
   margin-left: auto;
@@ -103,31 +145,27 @@ nav li a {
   padding-bottom: 50px; 
 }
 
-#classes {
-  margin-left: 20%;
-}
 
 main {
   padding: 2%;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 main p {
   font-size: 1.25em;
 }
 
-footer a {
-  text-decoration: none;
-}
+/* Style rules for footer */
+
 
 footer {
- position: fixed;
+ position: sticky;
  background-color: #66ff66;
- bottom:0;
+ bottom: 0;
  width: 100%;
  text-align: center;
  font-size: 1em;
- padding-top: 0.5%;
- padding-bottom: 0.5%;
- height: 3.5%;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ height: 2%;
 }
