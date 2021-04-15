@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul {
+body, header, nav, main, footer, img, h1, h3, ul, dl {
   margin: 0;
   padding: 0;
   border: 0;
@@ -29,7 +29,6 @@ img {
 
 /* Style rules for main content */
 
-/* Style rules for mobile viewport */
 
 .round {
   border-radius: 6px;
@@ -54,9 +53,6 @@ a:link {
   color: #000000;
 }
 
-dl {
-  margin: 0;
-}
 
 dd {
   font-size: 1.5em;
@@ -102,10 +98,11 @@ nav li a {
     width: 80%;
     text-align: center;
     border-radius: 5px;
+    font-size: 1.6em;
 }
 
 .tel-link a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.2em;
     display: block;
@@ -118,7 +115,6 @@ nav li a {
   margin: 30px auto 100px auto;
   display: block;
 }
-
 
 .post {
   float: right;
@@ -145,6 +141,11 @@ nav li a {
   padding-bottom: 50px; 
 }
 
+ol {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
 
 main {
   padding: 2%;
@@ -168,4 +169,97 @@ footer {
  padding-top: 1%;
  padding-bottom: 1%;
  height: 2%;
+}
+
+@media screen and (min-width:300px), print {
+
+/* Mobile Viewport: Style rules for main content */
+  .tel-link a {
+    font-size: 0.9em;
+  }
+
+  body {
+    background: linear-gradient(to top, #b3ffb3, #ccffcc 100%);
+  }
+
+  .tab-desk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 620px), print {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  /* Tablet Viewport: Style rules for main content */
+  .tel-link a {
+    font-size: 1.1em;
+  }
+
+  ul img {
+  max-width: 35%;
+  }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+  
+  /* Desktop Viewport: Style rules for nav area */
+
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  
+  .column {
+  float: left;
+  margin-left: ;
+  }
+
+  .right {
+    width: 33%;
+  }
+
+  .middle {
+    width: 33%;
+  }
+
+  .left {
+    width: 33%;
+  }
+
+  #feed {
+    width: 70%;
+  }
+
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+ 
 }
