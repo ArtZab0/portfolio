@@ -179,24 +179,7 @@ main p {
   font-size: 1.25em;
 }
 
-/* Style rules for footer */
-
-
-footer {
- position: sticky;
- background-color: #2a1f14;
- bottom: 0;
- width: 100%;
- text-align: center;
- font-size: 1em;
- padding-top: 1%;
- padding-bottom: 1%;
- height: 2%;
- color: #f6eee4;
-}
-
-
-.tab-desk {
+.tab-desk, .desktop {
    display: none;
 }
 
@@ -213,6 +196,85 @@ figure img {
   max-width: 400px;
   margin: 2% auto;
 }
+
+/* Style rules for form */
+
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit, form #reset {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+}
+
+#buttons {
+  width: 50%;
+  margin: 0 auto;
+}
+
+textarea {
+  margin: 2% auto;
+}
+
+/* Style rules for table */
+
+table {
+  border: 1px solid #2a1f14;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+caption {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th, td {
+  border: 1px solid #2a1f14;
+  padding: 1%;
+  width: 10%;
+  font-size: 0.7em;
+}
+
+table tr:nth-child(odd) {
+  background-color: #deccba;
+}
+
+/* Style rules for footer */
+
+
+footer {
+ position: sticky;
+ background-color: #2a1f14;
+ bottom: 0;
+ width: 100%;
+ text-align: center;
+ font-size: 1em;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ height: 2%;
+ color: #f6eee4;
+}
+
 
 @media screen and (min-width: 620px), print {
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
@@ -246,11 +308,32 @@ figure img {
   max-width: 35%;
   }
 
+  /* Style rules for table */
+
+  th, td {
+    font-size: 1.15em;
+  }
+
+  caption {
+    font-size: 1.5em;
+  }
+
+
+  /* Style rules for form */
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
   
+  .desktop {
+    display: block
+  }
+
   /* Desktop Viewport: Style rules for nav area */
 
   nav li {
@@ -273,6 +356,23 @@ figure img {
     grid-template-columns: auto auto;
     grid-gap: 10px;
   }
+
+/* Desktop Viewport: Style rules for form elements */
+
+form {
+  width: auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+#buttons {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
 
 }
 
