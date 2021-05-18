@@ -30,6 +30,13 @@ header img {
 
 /* Style rules for main content */
 
+.mobile, .mobile-tablet {
+  display: block;
+}
+
+.tab-desk, .desktop, #menu-links {
+  display: none;
+}
 
 .round {
   border-radius: 6px;
@@ -45,12 +52,34 @@ nav {
   background-color: #2a1f14;
 }
 
-nav li a:hover {
-    color: #2a1f14;
-    background-color: #f6eee4;
-    opacity: 0.5;
-  }
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+ 
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;  
+}
+ 
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #2a1f14;
+}
 
+
+nav li a:hover {
+  color: #2a1f14;
+  background-color: #f6eee4;
+  opacity: 0.5;
+}
 
 a:link {
   text-decoration: none;
@@ -70,29 +99,6 @@ dt {
   font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-nav li{
-  display: block;
-  border-color: #f6eee4;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
-
-nav li a {
-  display: block;
-  color: #f6eee4;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-}
 
 
 .tel-link {
@@ -179,9 +185,6 @@ main p {
   font-size: 1.25em;
 }
 
-.tab-desk, .desktop {
-   display: none;
-}
 
 aside {
   grid-column: 1 / span 2;
@@ -279,11 +282,15 @@ footer {
 @media screen and (min-width: 620px), print {
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
 
-  .tab-desk {
+  .tab-desk, .desktop {
     display: block;
   }
 
-  .mobile {
+  .mobile, #mobile-nav {
+    display: none;
+  }
+
+  .menu-icon div {
     display: none;
   }
 
@@ -293,11 +300,24 @@ footer {
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
+    border-color: #f6eee4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 
   nav li a {
     padding: 0.5em;
+    color: #f6eee4;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: block;
   }
+
+  nav ul {
+  list-style: none;
+  text-align: center;
+  }
+
 
   /* Tablet Viewport: Style rules for main content */
   .tel-link a {
@@ -306,6 +326,10 @@ footer {
 
   ul img {
   max-width: 35%;
+  }
+
+  header img:hover {
+    transform: scale(1.1);
   }
 
   /* Style rules for table */

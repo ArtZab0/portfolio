@@ -3,94 +3,110 @@
 Student Name: Artem Zabarov
 File Name: classes.html
 Date: 3/9/2021
---> 
+-->
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-      <title>C2 Consider This: Your Turn 1; Classes</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
-      <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-    </head>
-    
+<head>
+	<title>C2 Consider This: Your Turn 1; Classes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap"
+		rel="stylesheet">
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-       </ul>
-      </nav>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
 
-      <header>
-        <figure>
-          <figcaption>
-            <h1>Artem Zabarov</h1>
-            <h2>Work Smart AND Hard</h2>
-          </figcaption>
-        </figure>
-      </header>
+<body>
 
-      <!-- Use the main area to add the main content to the webpage -->
-      <main>
-        <div id="classes">
-            <table>
-              <caption>I have the following schedule:</caption>
+  <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="about.html">About</a>
+			<a href="classes.html">Classes</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
 
-              <tr>
-                <th></th>
-                <th>5/3/21</th>
-                <th>5/4/21</th>
-                <th>5/5/21</th>
-                <th>5/6/21</th>
-                <th>5/7/21</th>
-              </tr>
-              
-              <tr>
-                <th>7:30 am - 10:00 am</th>
-                <td>ITP</td>
-                <td>ITP</td>
-                <td>ITP</td>
-                <td>ITP</td>
-                <td>ITP</td>
-              </tr>
+	<nav class="tab-desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="classes.html">Classes</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
 
-              <tr>
-                <th>11:51 am - 1:21 pm</th>
-                <td>English 3</td>
-                <td>Physics 1</td>
-                <td>English 3</td>
-                <td>Physics 1</td>
-                <td>English 3</td>
-              </tr>
+	<header>
+		<figure>
+			<figcaption>
+				<h1>Artem Zabarov</h1>
+				<h2>Work Smart AND Hard</h2>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- Use the main area to add the main content to the webpage -->
+	<main>
+		<div id="classes">
+			<table>
+				<caption>I have the following schedule:</caption>
+
+				<tr>
+					<th></th>
+					<th>5/3/21</th>
+					<th>5/4/21</th>
+					<th>5/5/21</th>
+					<th>5/6/21</th>
+					<th>5/7/21</th>
+				</tr>
+
+				<tr>
+					<th>7:30 am - 10:00 am</th>
+					<td>ITP</td>
+					<td>ITP</td>
+					<td>ITP</td>
+					<td>ITP</td>
+					<td>ITP</td>
+				</tr>
+
+				<tr>
+					<th>11:51 am - 1:21 pm</th>
+					<td>English 3</td>
+					<td>Physics 1</td>
+					<td>English 3</td>
+					<td>Physics 1</td>
+					<td>English 3</td>
+				</tr>
 
 
-              <tr>
-                <th>1:29 pm - 3:00 pm</th>
-                <td>Math 4</td>
-                <td>American Gov</td>
-                <td>Math 4</td>
-                <td>American Gov</td>
-                <td>Math 4</td>
-              </tr>
-            </table>
-        </div>
-      </main>
+				<tr>
+					<th>1:29 pm - 3:00 pm</th>
+					<td>Math 4</td>
+					<td>American Gov</td>
+					<td>Math 4</td>
+					<td>American Gov</td>
+					<td>Math 4</td>
+				</tr>
+			</table>
+		</div>
+	</main>
 
-      <footer>
-        <a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
+	<footer>
+		<a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
           &copy; Copyright 2021. All Rights Reserved.
       </footer>
+    <script src=scripts/script.js></script>
+</body>
 
-    </body>
-
-  </html>
+</html>

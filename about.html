@@ -3,63 +3,79 @@
 Student Name: Artem Zabarov
 File Name: about.html
 Date: 3/9/2021
---> 
+-->
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-      <title>C2 Consider This: Your Turn 1; About</title>
-      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
-      <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-    </head>
-     
+<head>
+	<title>C2 Consider This: Your Turn 1; About</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap"
+		rel="stylesheet">
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-       </ul>
-      </nav>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
 
-      <header>
-        <figure>
-          <figcaption>
-            <h1>Artem Zabarov</h1>
-            <h2>Work Smart AND Hard</h2>
-          </figcaption>
-        </figure>
-      </header>
+<body>
 
-      <!-- Use the main area to add the main content to the webpage -->
-      <main>
-        <article id="about">
-          <h2> About Artem Zabarov </h2>
-          <dl>
-            <dt>Past</dt>
-            <dd>Moved from Russia to the US in 2016</dd>
-            <dt>Current</dt>
-            <dd>Interested in computer technology and science</dd>
-            <dt>Future</dt>
-            <dd>Want to go to college for a CS degree and work in the fields related</dd>
-          </dl>
-        </article> 
-      </main>
+  <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="about.html">About</a>
+			<a href="classes.html">Classes</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
 
-      <footer>
-        <a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
+	<nav class="tab-desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="classes.html">Classes</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+
+	<header>
+		<figure>
+			<figcaption>
+				<h1>Artem Zabarov</h1>
+				<h2>Work Smart AND Hard</h2>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- Use the main area to add the main content to the webpage -->
+	<main>
+		<article id="about">
+			<h2> About Artem Zabarov </h2>
+			<dl>
+				<dt>Past</dt>
+				<dd>Moved from Russia to the US in 2016</dd>
+				<dt>Current</dt>
+				<dd>Interested in computer technology and science</dd>
+				<dt>Future</dt>
+				<dd>Want to go to college for a CS degree and work in the fields related</dd>
+			</dl>
+		</article>
+	</main>
+
+	<footer>
+		<a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
           &copy; Copyright 2021. All Rights Reserved.
       </footer>
+    <script src=scripts/script.js></script>
+</body>
 
-    </body>
-
-  </html>
+</html>

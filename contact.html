@@ -21,103 +21,119 @@ Date: 3/9/2021
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 
-<nav>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Me</a></li>
-		<li><a href="classes.html">Classes</a></li>
-		<li><a href="blog.html">Blog</a></li>
-		<li><a href="contact.html">Contact Me</a></li>
-	</ul>
-</nav>
+<body>
+  <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="about.html">About</a>
+			<a href="classes.html">Classes</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
 
-<header>
-	<figure>
-		<figcaption>
-			<h1>Artem Zabarov</h1>
-			<h2>Work Smart AND Hard</h2>
-		</figcaption>
-	</figure>
-</header>
+	<nav class="tab-desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="classes.html">Classes</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
 
-<!-- Use the main area to add the main content to the webpage -->
-<main>
-	<article id="contact">
-		<p> You can reach me by: </p>
-		<p class="tel-link mobile"><a href="tel:2167030925">Phone: (216)-703-0925</a></p>
-		<p class="tel-link tab-desk">Phone: (216)-703-0925</p>
-		<section>
-			<p class="email-link tab-desk">Personal Email: <a
-					href="mailto:zabarovart@gmail.com">zabarovart@gmail.com</a></p>
-			<p class="email-link tab-desk">School Email: <a
-					href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
-		</section>
-		<p> You can also find me at Mayfield High School</p>
-		<iframe class="map"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5052326505183!2d-81.46162878430108!3d41.536656779250805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831016dbe1bfa31%3A0x7c0aa8552a009aca!2sMayfield%20High%20School!5e0!3m2!1sen!2sus!4v1616069601051!5m2!1sen!2sus"
-			allowfullscreen loading="lazy"></iframe>
-	</article>
+	<header>
+		<figure>
+			<figcaption>
+				<h1>Artem Zabarov</h1>
+				<h2>Work Smart AND Hard</h2>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- Use the main area to add the main content to the webpage -->
+	<main>
+		<article id="contact">
+			<p> You can reach me by: </p>
+			<p class="tel-link mobile"><a href="tel:2167030925">Phone: (216)-703-0925</a></p>
+			<p class="tel-link tab-desk">Phone: (216)-703-0925</p>
+			<section>
+				<p class="email-link tab-desk">Personal Email: <a
+						href="mailto:zabarovart@gmail.com">zabarovart@gmail.com</a></p>
+				<p class="email-link tab-desk">School Email: <a
+						href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
+			</section>
+			<p> You can also find me at Mayfield High School</p>
+			<iframe class="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5052326505183!2d-81.46162878430108!3d41.536656779250805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831016dbe1bfa31%3A0x7c0aa8552a009aca!2sMayfield%20High%20School!5e0!3m2!1sen!2sus!4v1616069601051!5m2!1sen!2sus"
+				allowfullscreen loading="lazy"></iframe>
+		</article>
 
 
-	<div id="form">
+		<div id="form">
 
-		<p>Complete the form below and we will contact you soon.</p>
+			<p>Complete the form below and we will contact you soon.</p>
 
-		<form class="form-grid">
+			<form class="form-grid">
 
-			<fieldset>
-				<legend>Contact Information</legend>
+				<fieldset>
+					<legend>Contact Information</legend>
 
-				<label for="fName">First Name</label>
-				<input type="text" name="fName" id="fName">
+					<label for="fName">First Name</label>
+					<input type="text" name="fName" id="fName">
 
-				<label for="lName">Last Name</label>
-				<input type="text" name="lName" id="lName">
+					<label for="lName">Last Name</label>
+					<input type="text" name="lName" id="lName">
 
-				<label for="bName">Name of Business:</label>
-				<input type="text" name="bName" id="bName">
+					<label for="bName">Name of Business:</label>
+					<input type="text" name="bName" id="bName">
 
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
 
-				<label for="phone">First Name:</label>
-				<input type="tel" name="phone" id="phone">
+					<label for="phone">First Name:</label>
+					<input type="tel" name="phone" id="phone">
       </fieldset>
 
-			<fieldset>
-				<legend>Additional Information</legend>
+					<fieldset>
+						<legend>Additional Information</legend>
 
-				<p>I would like more information about:</p>
+						<p>I would like more information about:</p>
 
-				<label for="vol"><input type="radio" name="info", id="vol" value="Volunteering">Schedule</label>
+						<label for="vol"><input type="radio" name="info", id="vol" value="Volunteering">Schedule</label>
 
-				<label for="sponsor"><input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">Blog</label>
+						<label for="sponsor"><input type="radio" name="info" id="sponsor" value="Sponsorship Opportunities">Blog</label>
 
-				<label for="wild"><input type="radio" name="info" id="wild" value="Wildlife">About Info</label>
+						<label for="wild"><input type="radio" name="info" id="wild" value="Wildlife">About Info</label>
 
-				<label for="other"><input type="radio" name="info" id="other" value="Other"> Other, pelase specify below</label>
+						<label for="other"><input type="radio" name="info" id="other" value="Other"> Other, pelase specify below</label>
 
-				<label for="questions">What questions do you have?</label>
-				<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+						<label for="questions">What questions do you have?</label>
+						<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
 
-			</fieldset>
+					</fieldset>
 
-				<div id="buttons">
-          <input type="reset" id="reset" value="Reset" class="btn">
-          <input type="submit" id="submit" value="Submit" class="btn">
+					<div id="buttons">
+						<input type="reset" id="reset" value="Reset" class="btn">
+						<input type="submit" id="submit" value="Submit" class="btn">
         </div>
 
 			</form>
-	</div>
+		</div>
 
 
-</main>
+	</main>
 
-<footer>
-	<a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
+	<footer>
+		<a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a><br>
           &copy; Copyright 2021. All Rights Reserved.
       </footer>
+  <script src=scripts/script.js></script>
 
-	</body>
+</body>
 
 </html>
